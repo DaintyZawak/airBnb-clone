@@ -1,11 +1,308 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+section {
+  padding: 20px;
+}
+
+.Container {
+  width: 550px;
+  margin: auto;
+  background-color: #ffffff;
+}
+.BnBNav {
+  /* width: 550px; */
+  height: 95px;
+  background-color: #ffffff;
+  z-index: 1000;
+  margin: auto;
+  
+}
+
+.BnBLogo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.HeroSection {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  /* width: 550px; */
+  height: 500px;
+  background-color: #ffffff;
+}
+
+.HeroImg {
+  max-width: 400px;
+  height: 232px;
+  align-self: center;
+  margin: 50px;
+}
+
+.HeroHeader {
+  font-size: 36px;
+  margin-left: 30px;
+}
+.HeroTxt {
+  width: 320px;
+  height: 56px;
+  font-size: 16px;
+  margin: 10px 0 0 30px;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+
+.card {
+  font-size: 12px;
+  flex: 0 0 auto;         
+  display: flex;          
+  flex-direction: column; 
+  position: relative;
+}
+
+.img--wrapper {
+  width: 176px;
+  height: 235px;
+}
+.card--image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.gray {
+  color: #918E9B;
+}
+
+.card--star {
+  height: 14px;
+}
+
+.card--price {
+  margin-top: auto;
+}
+
+.card--badge {
+  position: absoute;
+  top: 10px;
+  left: 6px;
+  background-color: #fcc1c1;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+
+
+
+/* .Container {
+  background-color: #23252C;
+  width: 550px;
+  height: 868px;
+  font-size: 10px;
+  padding-top: 44px;
+  margin: auto;
+}
+
+.LauraContainer {
+  text-align: center;
+  
+}
+
+.laura {
+  width: 317px;
+  height: 317px;
+  object-fit: contain;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.CardContainer {
+  width: 317px;
+  height: 399px;
+  margin: auto;
+  background-color: #F5F5F5;
+  padding: 30px;
+
+}
+
+.HeadingContainer {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.HeadingContainer > h1 {
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: #2B283A;
 }
+
+.subheading {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #F47D27;
+}
+
+.website {
+  margin-bottom: 10px;
+  color: #4A4E74;
+}
+
+button {
+  width: 247px;
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-color: #D1D5DB;
+  margin-bottom: 20px;
+}
+
+.button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.EmailIcon {
+  margin-right: 10px;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #2B283A;
+}
+
+.AboutTxt {
+  margin-bottom: 15px;
+}
+
+.IconsContainer {
+  width: 317px;
+  height: 64px;
+  background-color: #D5D4D8;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+} */
+
+
+
+
+
+/* .Nav {
+  background-color: #21222A;
+  width: 550px;
+  height: 90px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #DEEBF8;
+  padding: 30px 25px;
+  z-index: 5;
+}
+
+.LogoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #00D8FF;
+}
+
+.LogoText {
+  margin-left: 7px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.ProjectText {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.MainContent {
+  background-color: #282D35;
+  background-image: url(../src/images/reactjs-icon\ 2.png);
+  background-repeat: no-repeat;
+  background-position: right 75%;
+  background-size: contain;
+  width: 550px;
+  height: 459px;
+  margin: auto;
+  
+}
+
+.MainHeader {
+  font-size: 39px;
+  color: #ffffff;
+  padding: 50px;
+}
+
+.MainList li {
+  list-style-type: none;
+  color: #ffffff;
+  margin: 0 0 10px 74px;
+  font-size: 16px;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #61DAFB;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+} */
+
+/* .App {
+  text-align: center;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +332,60 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+/* .nav-items {
+  list-style-type: none;
+  display: flex;
+  
 }
+
+.nav-items > li {
+  margin: 20px;
+  padding: 10px;
+  color: whitesmoke;
+
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(30, 34, 82);
+  z-index: 5;
+  height: 80px;
+}
+
+.nav-logo {
+  width: 60px;
+  pointer-events: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(30, 34, 82);
+  color: whitesmoke;
+  z-index: 5;
+  height: 70px;
+  width: 100%;
+  
+}
+
+.txt {
+  margin: auto;
+  margin-top: 100px;
+  width: 500px;
+}
+
+.h1-txt {
+  color: rgb(30, 34, 82);
+} */
